@@ -5,6 +5,7 @@ body{
     background-size:auto;
     font-family: "Poppins", sans-serif;
     height: 1000px;
+    overflow-x: hidden;
 }
 header{
     color: #fff;
@@ -170,4 +171,35 @@ div hr:nth-child(3){
     left: 0;
     top: 70%;
    transform:rotate(-20deg)
+}
+#myCheckbox{
+    position: absolute;
+     z-index: 1;
+     top: 8%;
+     right: 5%;
+    /* visibility: hidden; belede checkbox  islemir. */
+}
+#menu{
+    /* display: none; */
+    margin-left: 50px;
+    position: absolute;
+    right: -300px;
+    color: #fff;
+    padding: 10px;
+    width: 250px;
+    background-color: #579252;
+    z-index: 2;
+}
+#menu p{
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+}
+#myCheckbox:checked + #menu {
+    transition: 1s;
+    display: block;
+   
+    right: 50px;
+    transition-timing-function: 1s;
+    
 }
