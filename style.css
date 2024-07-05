@@ -172,17 +172,12 @@ div hr:nth-child(3){
     top: 70%;
    transform:rotate(-20deg)
 }
-#myCheckbox{
-    position: absolute;
-     z-index: 1;
-     top: 8%;
-     right: 5%;
-    /* visibility: hidden; belede checkbox  islemir. */
-}
-#menu{
+
+.menu{
     /* display: none; */
     margin-left: 50px;
     position: absolute;
+    top: 120px;
     right: -300px;
     color: #fff;
     padding: 10px;
@@ -190,16 +185,22 @@ div hr:nth-child(3){
     background-color: #579252;
     z-index: 2;
 }
-#menu p{
+.menu p{
     padding: 15px;
+    margin: 0;
     border-bottom: 1px solid #fff;
     font-size: 16px;
 }
-#myCheckbox:checked + #menu {
+.menu p:hover{
+    color: #123717;
+    background-color: #fff;
+    transition-duration: 0.6;
+}
+.img3:hover + .menu {
     transition: 1s;
     display: block;
-   
-    right: 50px;
-    transition-timing-function: 1s;
+   position: absolute;
+    right: 100px;
+  
     
 }
